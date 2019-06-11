@@ -68,9 +68,15 @@ print(arr)
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
+    for i in range(0, len(arr) -1):
+        for j in range(0, len(arr) -1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
 
     return arr
-
+arr2 = [11, 15, 9, 3, 8, 5, 2]
+selection_sort(arr2)
+print(arr2)
 
 # STRETCH: implement the Count Sort function below
 def count_sort( arr, maximum=-1 ):
