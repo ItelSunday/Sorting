@@ -9,7 +9,7 @@ Many times in your Lambda career, we encourage you to scour the internet anytime
 That being said, please still use the 20 minute rule :slightly_smiling_face:
 
 
-# Part 1
+# Part 1 -- Monday 
 
 ## MVP Tasks
 
