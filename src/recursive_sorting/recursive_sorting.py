@@ -8,9 +8,9 @@ def merge( arrA, arrB):
     # TO-DO
     for i in range(0, elements): 
         if j >= len(arrA):
-            merged_arr[i]= arrB[k]
+            merged_arr[i]= arrB[k] #indices to second var is k
             k += 1
-        elif k >= len(arrB):
+        elif k >= len(arrB): #checking element of each one
             merged_arr[i]=  arrA[j]
             j += 1
         elif arrA[j] < arrB[k]:
