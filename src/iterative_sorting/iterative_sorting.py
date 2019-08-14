@@ -1,6 +1,6 @@
 # TO-DO: Complete the selection_sort() function below 
 
-
+#SS - Each iteration you start skipping the values until you escape to min value you will get a sorted array
 def selection_sort(arr):
     for i in range(0, len(arr) - 1): #Begin from min to high index 
         cur_index = i #Holds min position, changing the min position to i every after iteration | starts with zero
@@ -31,6 +31,8 @@ print(arr)
 
 
 # TO-DO:  implement the Bubble Sort function below
+
+# 
 def bubble_sort( arr ):
     for i in range(0, len(arr) -1):
         for j in range(0, len(arr) -1):

@@ -3,14 +3,14 @@
 def merge( arrA, arrB):
     elements = len( arrA ) + len( arrB )
     merged_arr = [0] * elements
-    j = []
-    k = []
+    j = 0
+    k = 0
     # TO-DO
-    for i in range(0, elements):
+    for i in range(0, elements): 
         if j >= len(arrA):
-            merged_arr[i]= arrB[k]
+            merged_arr[i]= arrB[k] #indices to second var is k
             k += 1
-        elif k >= len(arrB):
+        elif k >= len(arrB): #checking element of each one
             merged_arr[i]=  arrA[j]
             j += 1
         elif arrA[j] < arrB[k]:
@@ -29,8 +29,8 @@ def merge( arrA, arrB):
 def merge_sort( arr ):
     # TO-DO
     if len(arr) > 1:
-        left = merge_sort(arr[0:len(arr)/2]) 
-        right = merge_sort(arr[len(arr)/2]) #starts in the middle
+        left = merge_sort(arr[0: len(arr)// 2]) 
+        right = merge_sort(arr[len(arr)// 2:]) #starts in the middle
         arr = merge(left,right)
 
     return arr
